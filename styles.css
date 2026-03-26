@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===== ГЛАВНОЕ МЕНЮ (шапка) ===== */
+#main_menu {
+    background: #2c3e50;
+    padding: 12px 20px;
+    text-align: center;
+}
+#main_menu a {
+    display: inline-block;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 24px;
+    margin: 0 5px;
+    border: 1px solid #4a6278;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+#main_menu a:hover {
+    background: #3d566e;
+}
+#main_menu a.selected {
+    background: #27ae60;
+    border-color: #27ae60;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* ===== ОСНОВНАЯ ОБЛАСТЬ ===== */
+.content-wrapper {
+    display: flex;
+    flex: 1;
+}
+
+/* ===== ОСНОВНОЕ МЕНЮ (боковое) ===== */
+#product_menu {
+    width: 240px;
+    min-width: 240px;
+    background: #ecf0f1;
+    padding: 15px 10px;
+    border-right: 1px solid #bdc3c7;
+}
+#product_menu a {
+    display: block;
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 10px 14px;
+    margin: 3px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+#product_menu a:hover {
+    background: #d5dbdb;
+}
+#product_menu a.selected {
+    background: #27ae60;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* ===== ОБЛАСТЬ ТАБЛИЦЫ УМНОЖЕНИЯ ===== */
+#multiplication_table {
+    flex: 1;
+    padding: 25px;
+}
+
+/* ===== ТАБЛИЧНАЯ ВЕРСТКА ===== */
+table.mult-table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+table.mult-table td {
+    border: 1px solid #bdc3c7;
+    padding: 8px 14px;
+    text-align: center;
+    min-width: 50px;
+    font-size: 15px;
+}
+table.mult-table td a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+table.mult-table td a:hover {
+    text-decoration: underline;
+    color: #e74c3c;
+}
+
+/* ===== БЛОЧНАЯ ВЕРСТКА ===== */
+.ttRow, .ttSingleRow {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 12px 12px 0;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    background: #fafafa;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.ttSingleRow {
+    border: 2px solid #2c3e50;
+    background: #fff;
+}
+.ttRow a, .ttSingleRow a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+.ttRow a:hover, .ttSingleRow a:hover {
+    text-decoration: underline;
+    color: #e74c3c;
+}
+
+/* ===== ПОДВАЛ ===== */
+#footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
