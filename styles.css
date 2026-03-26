@@ -1,0 +1,95 @@
+/* General page styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+header h1, header p {
+    margin: 0;
+}
+
+header .user-info {
+    font-size: 0.9em;
+}
+
+/* Main content styles */
+main {
+    flex: 1 0 auto; /* Push footer down */
+    padding: 20px;
+    background-color: #f0f0f0; /* Light-gray background */
+    color: #000; /* Black text */
+}
+
+/* Footer styles */
+footer {
+    flex-shrink: 0; /* Prevent footer from shrinking */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Form styles */
+.layout-switcher {
+    margin-bottom: 20px;
+}
+
+/* Layout D: Table styles */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.results-table th, .results-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.results-table th {
+    background-color: #e0e0e0;
+}
+
+/* Layout E: Block styles */
+.results-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Replaces margin */
+}
+
+.results-blocks div {
+    border: 2px solid red;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Aggregates styling */
+.aggregates {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e7e7e7;
+    border-left: 5px solid #333;
+}
+
+.aggregates p {
+    margin: 5px 0;
+}
