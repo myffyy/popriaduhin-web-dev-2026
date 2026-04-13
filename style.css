@@ -1,0 +1,103 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #006400; /* Темно-зеленый */
+	color: white;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	z-index: 1000;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 1.5em;
+}
+
+nav {
+	margin-top: 20px; /* Отступ от заголовка */
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 5px 10px;
+	transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+	background-color: #004d00;
+}
+
+nav ul li a.selected_menu {
+	background-color: #4caf50; /* Выделение активного пункта */
+	font-weight: bold;
+}
+
+main {
+	flex-grow: 1;
+	padding: 100px 20px 60px 20px; /* Отступ для фиксированной шапки и подвала */
+	max-width: 800px;
+	margin: 0 auto;
+	line-height: 1.6;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #36454f; /* Темно-серый */
+	color: #f5f5dc; /* Светло-серый */
+	padding: 10px 20px;
+	text-align: center;
+	box-sizing: border-box;
+	z-index: 1000;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+}
+
+table,
+th,
+td {
+	border: 1px solid #ddd;
+}
+
+th,
+td {
+	padding: 8px;
+	text-align: left;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 20px 0;
+}
