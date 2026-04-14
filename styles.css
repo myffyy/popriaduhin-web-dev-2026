@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+#menu {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+}
+
+#menu a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 4px;
+}
+
+#menu a.selected {
+    color: red;
+    border-color: red;
+    font-weight: bold;
+}
+
+#submenu {
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid #ddd;
+}
+
+#submenu a {
+    font-size: 0.85em;
+    padding: 5px 10px;
+}
+
+#submenu a.selected {
+    color: red;
+    border-color: red;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+table th, table td {
+    border: 1px solid #999;
+    padding: 6px 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+#pages {
+    margin-top: 10px;
+}
+
+#pages a {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-right: 3px;
+    text-decoration: none;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 3px;
+}
+
+#pages a:hover {
+    border-width: 2px;
+}
+
+#pages span {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-right: 3px;
+    color: red;
+    border: 1px solid red;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+form {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="email"],
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 60px;
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    padding: 8px 20px;
+    background-color: #4a90d9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #357abd;
+}
+
+.ok {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#edit_links {
+    margin-bottom: 15px;
+}
+
+#edit_links a {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: blue;
+    text-decoration: none;
+}
+
+#edit_links a:hover {
+    text-decoration: underline;
+}
+
+#edit_links div {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: red;
+    font-weight: bold;
+    border: 1px solid red;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+h1 {
+    color: #333;
+}
