@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS friends CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE friends;
+
+CREATE TABLE IF NOT EXISTS friends (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    surname VARCHAR(100) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    patronymic VARCHAR(100) DEFAULT '',
+    gender VARCHAR(1) DEFAULT '',
+    birthday DATE DEFAULT NULL,
+    telephone VARCHAR(50) DEFAULT '',
+    address VARCHAR(255) DEFAULT '',
+    email VARCHAR(100) DEFAULT '',
+    comment TEXT DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
