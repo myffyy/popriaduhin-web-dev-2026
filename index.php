@@ -217,6 +217,10 @@ if (isset($_POST['val'])) {
     $result = calculateSq($expression);
     $show_result = true;
     $store_history = isset($_POST['iteration']) && ($_POST['iteration'] + 1 == $_SESSION['iteration']);
+
+    if ($store_history) {
+        $_SESSION['history'][] = $expression . ' = ' . $result;
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -263,9 +267,6 @@ if (isset($_POST['val'])) {
                 }
             }
 
-            if ($store_history) {
-                $_SESSION['history'][] = $expression . ' = ' . $result;
-            }
             ?>
         </footer>
     </div>
