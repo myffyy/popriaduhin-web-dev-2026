@@ -1,0 +1,105 @@
+:root {
+    color-scheme: light;
+    --bg: #f6f1e8;
+    --panel: #fffdf8;
+    --ink: #1f1a17;
+    --muted: #6e6258;
+    --accent: #9a5b2a;
+    --border: #d8cbbd;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    background:
+        radial-gradient(circle at top, #fff8ec 0, #f6f1e8 40%, #ede4d7 100%);
+}
+
+.wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 32px 18px 24px;
+}
+
+.card {
+    background: rgba(255, 253, 248, 0.92);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(69, 49, 30, 0.12);
+    padding: 24px;
+}
+
+h1 {
+    margin: 0 0 12px;
+    font-size: 34px;
+    line-height: 1.1;
+}
+
+.lead {
+    margin: 0 0 20px;
+    color: var(--muted);
+}
+
+.message {
+    margin: 0 0 18px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: #fff8ef;
+    border: 1px solid #e7cfb6;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: #fff;
+    color: var(--ink);
+}
+
+input[type="text"]:focus {
+    outline: 3px solid rgba(154, 91, 42, 0.2);
+    border-color: var(--accent);
+}
+
+button {
+    margin-top: 14px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 999px;
+    color: #fff;
+    background: linear-gradient(135deg, #a25c2c, #6f3d1a);
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.history-title {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: var(--ink);
+}
+
+.history-item {
+    padding: 2px 0;
+    word-break: break-word;
+}
